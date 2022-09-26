@@ -1,0 +1,107 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 122, 141);
+}
+
+
+
+
+li, a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.global_header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-right: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+    /* background-color: rgb(96, 89, 89); */
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 25px;
+    /* background-color: rgb(96, 89, 89); */
+}
+
+.nav__links li, a{
+    transition: all 0.3s ease 0s;
+    /* background-color: rgb(96, 89, 89); */
+}
+
+.nav__links li a:hover{
+    color: rgb(39, 206, 236);
+}
+/* --Navbar Ends-- */
+
+/* --Home Page Starts-- */
+
+.home_container{
+    text-align: center;
+    margin-top: 2500px;
+    border-top: 85px solid black;
+    margin-top: 0%;
+    background-color: rgb(39, 206, 236);
+}
+.home_container > h1 {
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* --Home Page Ends-- */
+
+/* --About Us Starts-- */
+
+
+
+.about_container{
+    text-align: center;
+    margin-top: 2500px;
+    border-top: 85px solid black;
+    margin-top: 0%;
+    background-color: rgb(39, 206, 236);
+}
+.about_container > h1 {
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* --About Us Ends-- */
+
+/* --BlogPage  Starts-- */
+
+.blog_container{
+    /* position: relative; */
+   
+    text-align: center;
+    margin-top: 2500px;
+    border-top: 85px solid black;
+    margin-top: 0%;
+    background-color: rgb(39, 206, 236);
+}
+
+.blog_container > h1 {
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articles{
+    border: 10px solid black;
+}
