@@ -4,15 +4,17 @@
 {% block content %}
 <div class="blog_container">
     
-    <h1>Blog Page</h1>
+    <h1>Inside the Windows</h1>
+    
     {% for match in matches %}
     <div class="articles">
         
-        <!-- <h2>{{match.title}}</h2> -->
+        <h2>{{match.title}}</h2>
         <p>{{match.article|safe}}</p>
-        <h5>Created on: {{match.created}}</h5>
+        <h5 class="time-posted">Created on: {{match.created}}</h5>
         
     </div>
     {% endfor %}
+    
 </div>
 {% endblock %}
