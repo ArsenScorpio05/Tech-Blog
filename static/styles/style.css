@@ -13,6 +13,7 @@ li, a{
     font-size: 16px;
     color: white;
     text-decoration: none;
+    
 }
 
 .global_header{
@@ -21,7 +22,7 @@ li, a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2px;
+    /* padding-top: 2px; */
     padding-bottom: 0px;
     padding-right: 100px;
     background: rgb(48,50,51);
@@ -31,6 +32,7 @@ li, a{
 
 .logo{
     cursor: pointer;
+       
 }
 
 .nav__links{
@@ -40,7 +42,7 @@ li, a{
 
 .nav__links li{
     display: inline-block;
-    padding: 0px 25px;
+    padding: 0px 55px ;
     /* background-color: rgb(96, 89, 89); */
 }
 
@@ -68,9 +70,18 @@ li, a{
     margin-top: 0%;
     background: rgb(4,55,124);
     background: linear-gradient(90deg, rgba(4,55,124,1) 0%, rgba(12,68,145,1) 15%, rgba(39,72,156,1) 25%, rgba(65,68,200,1) 45%, rgba(28,125,187,1) 63%, rgba(50,164,237,1) 78%, rgba(23,192,246,1) 84%, rgba(0,212,255,1) 92%, rgba(128,234,255,1) 97%, rgba(255,255,255,1) 100%);
-    position: fixed;
+    position: relative;
     top: 100px;
     height: 99%;
+}
+.articles-home{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+}
+.col {
+    border: 1px solid black;
 }
 .home_container > h1 {
     text-decoration: underline;
@@ -137,7 +148,7 @@ li, a{
     border: 2px solid rgb(0, 0, 0);
     width: 350px;
     text-align: center;
-    color: rgb(201, 195, 195);
+    color: rgb(82, 255, 3);
     
     
 }
