@@ -1,20 +1,32 @@
 {% extends 'main.html' %}
 
 
+
 {% block content %}
-<div class="blog_container">
-    
-    <h1>Inside the Windows</h1>
-    
-    {% for match in matches %}
-    <div class="articles">
-        
-        <h2>{{match.title}}</h2>
-        <p>{{match.article|safe}}</p>
-        <h5 class="time-posted">Created on: {{match.created}}</h5>
-        
+<div class="home_container">
+    <div class="topics-list">
+        <h3>Topics</h3>
+        <div>
+            <ul>
+                <a href="{% url 'articles' %}"><li>All</li></a>
+            </ul>
+        </div>
+        {% for topic in topics %}
+        <div>
+            <ul>
+                <a href="{% url 'articles' %}?q={{topic}}"><li>{{topic}}</li></a>
+            </ul>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-    
+    <div>
+        {% for match in matches %}
+        <div class="col">
+            <h5>{{match.title}}</h5>
+            <p>{{match.article|safe}}</p><br>
+            <h5 class="time-posted">Created on: {{match.created}}</h5>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

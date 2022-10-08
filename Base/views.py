@@ -22,9 +22,11 @@ def aboutPage(request):
     return render(request, "base/about.html", context)
 
 def blogArticles(request):
-    
+    q = request.GET.get('q') if request.GET.get('q') != None else ''
     context = {
-        "matches": Blog.objects.all(),
+        "matches": Blog.objects.filter(topic__topic__contains=q),
+        "topics": Topic.objects.all(),
+    
         
     }
     
